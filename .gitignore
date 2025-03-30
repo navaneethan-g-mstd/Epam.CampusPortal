@@ -1,0 +1,45 @@
+# Ignore .NET build artifacts
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/ref/
+**/refint/
+**/staticwebassets/
+
+# User-specific files
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Ignore build output from .NET Core
+!/dev/Backend/src/**/Properties/
+!/dev/Backend/src/**/Controllers/
+
+# Ignore UI dependencies
+/dev/UI/node_modules/
+/dev/UI/.angular/
+/dev/UI/.cache/
+/dev/UI/dist/
+/dev/UI/build/
+
+# Ignore deployment-specific files
+deployment/
+
+# Ignore test coverage and reports
+/dev/Backend/test/coverage/
+/dev/Backend/test/TestResults/
+
+# Ignore GitHub workflows cache
+.github/workflows/*.log
+
+# Ignore QA environment files
+/qa/.env
+/qa/*.log
